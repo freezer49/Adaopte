@@ -1,17 +1,31 @@
+import { FiFacebook, FiInstagram, FiLinkedin, FiTwitch } from "react-icons/fi";
+
 export default function Footer() {
   return (
-    <footer className="bg-heading-color text-primary-color">
+    <footer className="bg-heading-color text-primary-color gap-5">
       <div>
         <div>
-          <h3>Adaopte</h3>
-          <p>
-            Notre mission est de trouver des foyers aimants pour chaque animal
-            abandonné et de promouvoir le bien-être animal.{" "}
-          </p>
-          <a>FB</a>
-          <a>inst</a>
-          <a>linkedin</a>
-          <a>twitch</a>
+          <div>
+            <h3>Adaopte</h3>
+            <p>
+              Notre mission est de trouver des foyers aimants pour <br /> chaque
+              animal abandonné et de promouvoir le bien-être <br /> animal.{" "}
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <a>
+              <FiFacebook />
+            </a>
+            <a>
+              <FiInstagram />
+            </a>
+            <a>
+              <FiLinkedin />
+            </a>
+            <a>
+              <FiTwitch />
+            </a>
+          </div>
         </div>
         <div>
           <h3>Informations Utiles</h3>
@@ -29,7 +43,7 @@ export default function Footer() {
           <p> Tél: +33 1 23 45 67 89</p>
         </div>
       </div>
-      <div>
+      <div className="text-center">
         <p>&copy; 2025 Adaopte. Tous droits réservés.</p>
         <p>
           Ce site à été développé dans le cadre d'un projet pour ADA Tech
