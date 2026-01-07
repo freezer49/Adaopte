@@ -1,57 +1,46 @@
 // src/components/Header.tsx
-import { BiHomeAlt } from "react-icons/bi";
-import { LuBone } from "react-icons/lu";
-import { LuFish } from "react-icons/lu";
-import { LuSquirrel } from "react-icons/lu";
+import { LuHouse, LuBone, LuFish, LuSquirrel } from "react-icons/lu";
+import { NavLink } from "react-router";
+
+const link = [
+  { link: "/", label: "Accueil", icon: <LuHouse /> },
+  { link: "/Adopte", label: "J'adopte", icon: <LuBone /> },
+  { link: "/", label: "Guide de l'adoption", icon: <LuFish /> },
+  { link: "/", label: "Devenir bénévole", icon: <LuSquirrel /> },
+];
 
 export default function Header() {
   return (
     <header className="bg-color-#FFFAF8 shadow-md">
-      <div className="w-full px-10 py-4 flex justify-between items-center">
-        <a
-          href="/"
-          className="flex items-center gap-2 text-2xl font-medium text-gray-800 hover:opacity-80 transition-opacity"
-        >
-          <span role="img" aria-label="patte">
-            🐾
-          </span>
-          <span>
-            <strong>Ada</strong>
-            <strong style={{ color: "#ff6d38" }}>opte</strong>
-          </span>
-        </a>
-        <nav
-          className="flex gap-8 items-center justify-center flex-1"
-          aria-label="Navigation principale"
-        >
+      <ul className="w-full px-10 py-4 flex justify-between items-center">
+        <li>
           <a
-            href="/"
-            className="text-gray-800 font-medium hover:text-[#ff6d38] transition-colors flex items-center gap-1"
+            href="https://cataas.com/cat"
+            className="flex items-center gap-2 text-2xl font-medium text-gray-800 hover:opacity-80 transition-opacity"
           >
-            <BiHomeAlt />
-            Accueil
+            <span role="img" aria-label="patte">
+              🐾
+            </span>
+            <span>
+              <strong>Ada</strong>
+              <strong style={{ color: "#ff6d38" }}>opte</strong>
+            </span>
           </a>
-          <a
-            href="/Adoption"
-            className="text-gray-800 font-medium hover:text-[#ff6d38] transition-colors flex items-center gap-1"
-          >
-            <LuBone />
-            J'adopte
-          </a>
-          <a
-            href="/guide"
-            className="text-gray-800 font-medium hover:text-[#ff6d38] transition-colors flex items-center gap-1"
-          >
-            <LuFish />
-            Guide de l'adoption
-          </a>
-          <a
-            href="/benevole"
-            className="text-gray-800 font-medium hover:text-[#ff6d38] transition-colors flex items-center gap-1"
-          >
-            <LuSquirrel />
-            Devenir bénévole
-          </a>
+        </li>
+        <nav aria-label="Navigation principale">
+          <ul className="flex gap-8 items-center justify-center flex-1">
+            {link.map((key) => (
+              <li key={key.link}>
+                <NavLink
+                  to={key.link}
+                  className="text-gray-800 font-medium hover:text-[#ff6d38] transition-colors flex items-center gap-1"
+                >
+                  {key.icon}
+                  {key.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
         </nav>
         <button
           type="button"
@@ -59,7 +48,7 @@ export default function Header() {
         >
           Faire un don 🫶🏻
         </button>
-      </div>
+      </ul>
     </header>
   );
 }
