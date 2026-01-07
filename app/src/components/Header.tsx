@@ -33,7 +33,7 @@ export default function Header() {
               <li key={key.link}>
                 <NavLink
                   to={key.link}
-                  className="text-gray-800 font-medium hover:text-[#ff6d38] transition-colors flex items-center gap-1"
+                  className="text-gray-800 font-medium hover:text-secondary-color transition-colors flex items-center gap-1"
                 >
                   {key.icon}
                   {key.label}
