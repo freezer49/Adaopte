@@ -4,6 +4,7 @@ import App from "./App.tsx";
 import Adoption from "./pages/Adoption.tsx";
 import { BrowserRouter } from "react-router";
 import { Route, Routes } from "react-router";
+import Footer from "./components/footer.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
@@ -11,5 +12,6 @@ createRoot(document.getElementById("root")!).render(
       <Route path="/" element={<App />} />
       <Route path="/Adoption" element={<Adoption />} />
     </Routes>
+    <Footer/>
   </BrowserRouter>
 );
