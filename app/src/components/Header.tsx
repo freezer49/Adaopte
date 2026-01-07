@@ -42,12 +42,12 @@ export default function Header() {
             ))}
           </ul>
         </nav>
-        <button
-          type="button"
-          className="bg-[#E74B3B]! text-white! px-4! py-2! rounded-full! hover:bg-[#d43d2d]!"
+        <NavLink
+          to="/"
+          className="bg-[#E74B3B]! text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#d43d2d]!"
         >
           Faire un don 🫶🏻
-        </button>
+        </NavLink>
       </ul>
     </header>
   );
