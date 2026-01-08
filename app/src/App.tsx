@@ -30,15 +30,15 @@ export default function App() {
           </p>
 
           <div className="cta-buttons flex justify-center gap-4 mt-8 mb-5 px-4">
-            <button className="btn-primary bg-[#333333]! text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#1a1a1a]!">
+            <a className="btn-primary bg-[#333333]! text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#1a1a1a]!">
               Adoptez un animal
-            </button>
-            <button className="btn-secondary  bg-btn-secondary-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#D43C2C]!">
+            </a>
+            <a className="btn-secondary  bg-btn-secondary-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#D43C2C]!">
               Faire un don 🫶
-            </button>
-            <button className="btn-tertiary  bg-[#04A552]! text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#0a994f]!">
+            </a>
+            <a className="btn-tertiary  bg-[#04A552]! text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#0a994f]!">
               Devenir bénévole
-            </button>
+            </a>
           </div>
         </section>
       </main>
