@@ -11,7 +11,7 @@ const link = [
 
 export default function Header() {
   return (
-    <header className="bg-color-#FFFAF8 shadow-md">
+    <header className="bg-[#FFFAF8]! shadow-md">
       <ul className="w-full px-10 py-4 flex justify-between items-center">
         <li>
           <a
