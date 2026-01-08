@@ -2,6 +2,22 @@ export default function App() {
   return (
     <>
       <main>
+      <section className=" relative overflow-hidden text-center text-primary-color py-40 font-family-heading">
+        <div className=" relative z-50 ">
+          <h1 className="text-6xl pb-12">
+            Donnons-leurs autant qu'ils nous apportent
+          </h1>
+          <p>
+            Chaque jour, des milliers d'animaux attendent une famille aimante.
+            Trouvez votre <br />
+            compagnon idéal parmi nos animaux disponibles à l'adoption.
+          </p>
+        </div>
+        <img
+          src="../public/images/background.jpg"
+          className=" w-full h-full object-cover object-center brightness-80  absolute top-0"
+        ></img>
+      </section>
         <section className="cta-section bg-light-color pb-5">
           <h2 className="cta-title font-family-heading justify-center text-center pb-5 pt-5 text-4xl font-bold">
             Prêt·e à changer une vie ?{" "}
