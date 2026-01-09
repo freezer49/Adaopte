@@ -1,4 +1,5 @@
 import { NavLink } from "react-router";
+import { Filter } from "./components/Filter";
 
 export default function App() {
   return (
@@ -21,6 +22,11 @@ export default function App() {
           ></img>
         </section>
         <section>
+
+
+          <Filter />
+
+        
           <div className="p-20">
             <h2 className="text-5xl flex justify-center font-family-heading">
               Nos animaux à adopter
@@ -85,13 +91,22 @@ export default function App() {
           </p>
 
           <div className="cta-buttons flex justify-center gap-4 mt-8 mb-5 px-4">
-            <NavLink to="" className="btn-primary bg-[#333333]! text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#1a1a1a]!">
+            <NavLink
+              to=""
+              className="btn-primary bg-[#333333]! text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#1a1a1a]!"
+            >
               Adoptez un animal
             </NavLink>
-            <NavLink to="/" className="btn-secondary  bg-btn-secondary-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#D43C2C]!">
+            <NavLink
+              to="/"
+              className="btn-secondary  bg-btn-secondary-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#D43C2C]!"
+            >
               Faire un don 🫶
             </NavLink>
-            <NavLink to="/" className="btn-tertiary  bg-[#04A552]! text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#0a994f]!">
+            <NavLink
+              to="/"
+              className="btn-tertiary  bg-[#04A552]! text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#0a994f]!"
+            >
               Devenir bénévole
             </NavLink>
           </div>
