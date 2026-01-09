@@ -30,7 +30,7 @@ export default function App() {
               aimante. Chaque photo raconte une histoire et un espoir.
             </p>
           </div>
-          <div className="grid grid-flow-col grid-cols-4 grid-rows-3 pl-60 pr-60 gap-4 ">
+          <div className="grid grid-flow-col grid-cols-4 grid-rows-3 pl-60 pr-60 gap-4 h-200">
             <img
               className=" rounded-2xl row-span-2 object-cover h-full w-full"
               src="../images/charlesdeluvio-K4mSJ7kc0As-unsplash.jpg"
