@@ -4,7 +4,7 @@ import { NavLink } from "react-router";
 
 const link = [
   { link: "/", label: "Accueil", icon: <LuHouse /> },
-  { link: "/Adopte", label: "J'adopte", icon: <LuBone /> },
+  { link: "/Adoption", label: "J'adopte", icon: <LuBone /> },
   { link: "/", label: "Guide de l'adoption", icon: <LuFish /> },
   { link: "/", label: "Devenir bénévole", icon: <LuSquirrel /> },
 ];
