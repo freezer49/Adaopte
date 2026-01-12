@@ -1,4 +1,5 @@
 import { NavLink } from "react-router";
+import { Filter } from "./components/Filter";
 
 export default function App() {
   return (
@@ -22,6 +23,13 @@ export default function App() {
         </section>
 
         <section>
+
+
+          <div className="-translate-y-9">
+            <Filter />
+          </div>
+
+        
           <div className="p-20">
             <h2 className="text-5xl flex justify-center font-family-heading">
               Nos animaux à adopter
