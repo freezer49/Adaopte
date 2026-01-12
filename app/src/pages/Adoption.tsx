@@ -18,7 +18,9 @@ export default function Adoption() {
 
   return (
     <main>
-      <Filter />
+      <div className="mt-10 mb-10">
+        <Filter />
+      </div>
 
       <h2>Résultats</h2>
 

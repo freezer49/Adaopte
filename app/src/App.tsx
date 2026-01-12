@@ -24,7 +24,9 @@ export default function App() {
         <section>
 
 
-          <Filter />
+          <div className="-translate-y-9">
+            <Filter />
+          </div>
 
         
           <div className="p-20">
