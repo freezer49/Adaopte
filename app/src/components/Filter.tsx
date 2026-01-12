@@ -17,7 +17,7 @@ export function Filter() {
   };
 
   return (
-    <div>
+    <div className="flex justify-center rounded-lg w-[700px] bg-amber-500 mx-auto -translate-y-5">
       <div>
         <h3>Type d'animal</h3>
         <select
@@ -25,9 +25,9 @@ export function Filter() {
           onChange={(e) => setAnimalType(e.target.value)}
         >
           <option value="">Tous</option>
-          {type.map((item) => (
-            <option key={item.type} value={item.type}>
-              {item.type}
+          {type.map((key) => (
+            <option key={key.type} value={key.type}>
+              {key.type}
             </option>
           ))}
         </select>

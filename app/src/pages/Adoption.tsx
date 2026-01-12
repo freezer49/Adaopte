@@ -24,11 +24,17 @@ export default function Adoption() {
 
       {filteredAnimals.length === 0 && <p>Aucun résultat</p>}
 
-      {filteredAnimals.map((animal) => (
-        <div key={animal.name}>
-          {animal.name} – {animal.type} – {animal.city}
-        </div>
-      ))}
+      <div>
+        {filteredAnimals.map((animal) => (
+          <div key={animal.name}>
+            <p>{animal.type}</p>
+            <h3>{animal.name}</h3>
+            <span>{animal.age}</span>
+            <p>{animal.city}</p>
+            <p>{animal.description}</p>
+          </div>
+        ))}
+      </div>
     </main>
   );
 }
