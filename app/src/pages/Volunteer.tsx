@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { InfoCard } from "../components/infoCard";
 
 export default function Volunteer() {
   const {
@@ -155,11 +156,10 @@ export default function Volunteer() {
               />
             </div>
           </form>
-import { InfoCard } from "../components/infoCard";
+        </div>
+      </section>
 
-export default function Volunteer() {
-  return (
-    <div>
+      {/* Pourquoi devenir bénévole ? */}
       <section className=" py-20 bg-white">
         <div className="text-container mb-12">
           <h2 className="font-family-heading justify-center text-center pb-5 text-4xl font-bold">
