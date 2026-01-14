@@ -10,9 +10,17 @@
 
   --color-btn-primary-bg: #333;
   --color-btn-secondary-bg: #e74c3c;
+  --color-btn-hover-secondary-bg: #d43d2d;
   --color-btn-accent-bg: #00a652;
   --color-btn-primary-hover-bg: #8584ff;
   --color-btn-secondary-hover-bg: #333;
+  --color-cta-bg: #464646;
+  --color-cta-button-bg: #333333;
+  --color-cta-button-hover-bg: #1a1a1a;
+  --color-btn-tertiary-bg: #04a552;
+  --color-btn-tertiary-hover-bg: #0a994f;
+  --color-filter-text: #8482ff;
+  --color-filter-button-bg: #4d4c4b;
 
   --font-family-heading: "Amatic SC", sans-serif;
   --border-radius: 8px;

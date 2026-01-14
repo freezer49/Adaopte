@@ -10,7 +10,7 @@ export default function Volunteer() {
 
   return (
     <div>
-      <section className="relative overflow-hidden text-center text-primary-color py-40 bg-[#F9F9F9]">
+      <section className="relative overflow-hidden text-center text-primary-color py-40 bg-light-color">
         <div className="relative z-50 ">
           <h1 className="font-family-heading justify-center text-center pb-5 text-4xl font-bold">
             Devenir Bénévole{" "}
@@ -28,13 +28,13 @@ export default function Volunteer() {
 
       {/* Le formulaire d'inscription */}
 
-      <section className="bg-[#F9F9F9] pt-0 pb-16">
+      <section className="bg-light-color pt-0 pb-16">
         <div className="max-w-2xl mx-auto px-4 relative -mt-15">
           <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200 relative z-10">
             <h2 className="font-family-heading justify-center text-center pb-5 text-4xl font-bold">
               Formulaire d'inscription
             </h2>
-            <p className="text-[#464646] ad-description font-family-body text-center mx-auto max-w-3xl px-4 text-sm leading-relaxed">
+            <p className="text-cta-bg ad-description font-family-body text-center mx-auto max-w-3xl px-4 text-sm leading-relaxed">
               Remplissez ce formulaire pour rejoindre notre réseau de bénévoles.
               Nous vous contacterons rapidement pour vous présenter les
               prochaines étapes.
@@ -213,7 +213,7 @@ export default function Volunteer() {
                 <input
                   type="submit"
                   value="Envoyer ma candidature"
-                  className="btn-tertiary bg-[#04A552] text-white cursor-pointer px-6 py-3 rounded-full hover:bg-[#0a994f] transition-colors duration-200"
+                  className="btn-tertiary bg-btn-tertiary-bg text-white cursor-pointer px-6 py-3 rounded-full hover:bg-btn-tertiary-hover-bg transition-colors duration-200"
                 />
               </div>
             </form>
@@ -227,7 +227,7 @@ export default function Volunteer() {
           <h2 className="font-family-heading justify-center text-center pb-5 text-4xl font-bold">
             Pourquoi devenir bénévole ?
           </h2>
-          <p className="text-[#464646] ad-description font-family-body text-center mx-auto max-w-3xl px-4 text-sm leading-relaxed">
+          <p className="text-cta-bg ad-description font-family-body text-center mx-auto max-w-3xl px-4 text-sm leading-relaxed">
             Etre bénévole chez Adaopte, c'est bien plus qu'un coup de main :
             c'est un engagement du coeur, qui change des vies - humaines et
             animales.
@@ -263,17 +263,17 @@ export default function Volunteer() {
           Des questions ?{" "}
         </h2>
 
-        <p className="text-[#464646] cta-description font-family-body text-center mx-auto max-w-3xl px-4 text-sm leading-relaxed">
+        <p className="text-cta-bg cta-description font-family-body text-center mx-auto max-w-3xl px-4 text-sm leading-relaxed">
           Nous sommes là pour répondre à toutes vos interrogations concernant le
           bénévolat chez Adaopte. N'hésitez pas à nous contacter pour en savoir
           plus sur notre démarche.
         </p>
 
         <div className="cta-buttons flex justify-center gap-4 mt-8 mb-5 px-4">
-          <button className="btn-primary bg-[#333333]! text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#1a1a1a]!">
+          <button className="btn-primary bg-cta-button-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-cta-button-hover-bg">
             Foire aux questions
           </button>
-          <button className="btn-secondary  bg-btn-secondary-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#D43C2C]!">
+          <button className="btn-secondary  bg-btn-secondary-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-btn-hover-secondary-bg">
             Contactez-nous
           </button>
         </div>
