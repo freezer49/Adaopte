@@ -257,6 +257,27 @@ export default function Volunteer() {
           />
         </div>
       </section>
+
+      <section className="cta-section bg-light-color pb-5">
+        <h2 className="cta-title font-family-heading justify-center text-center pb-5 pt-5 text-4xl font-bold">
+          Des questions ?{" "}
+        </h2>
+
+        <p className="text-[#464646] cta-description font-family-body text-center mx-auto max-w-3xl px-4 text-sm leading-relaxed">
+          Nous sommes là pour répondre à toutes vos interrogations concernant le
+          bénévolat chez Adaopte. N'hésitez pas à nous contacter pour en savoir
+          plus sur notre démarche.
+        </p>
+
+        <div className="cta-buttons flex justify-center gap-4 mt-8 mb-5 px-4">
+          <button className="btn-primary bg-[#333333]! text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#1a1a1a]!">
+            Foire aux questions
+          </button>
+          <button className="btn-secondary  bg-btn-secondary-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#D43C2C]!">
+            Contactez-nous
+          </button>
+        </div>
+      </section>
     </div>
   );
 }
