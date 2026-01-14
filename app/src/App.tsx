@@ -19,6 +19,7 @@ export default function App() {
           </div>
           <img
             src="../public/images/background.jpg"
+            alt="tête de chien de face, la gueule ouverte, fond flou"
             className=" w-full h-full object-cover object-center brightness-80  absolute top-0"
           ></img>
         </section>
@@ -41,34 +42,42 @@ export default function App() {
             <img
               className=" rounded-2xl row-span-2 object-cover h-full w-full"
               src="../images/charlesdeluvio-K4mSJ7kc0As-unsplash.jpg"
+              alt=" Petit chien de face portant une veste en jean"
             ></img>
             <img
               className="rounded-2xl row-span-1 object-cover h-full w-full"
               src="../images/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg"
+              alt="chat blanc et noir de face avec les pates avant sur une table"
             ></img>
             <img
               className="rounded-2xl row-span-1 object-cover h-full w-full"
               src="../images/chan-swan-NKyl19P5IHg-unsplash.jpg"
+              alt="Lapin blanc et marron dans l'herbe"
             ></img>
             <img
               className="rounded-2xl row-span-2 object-cover h-full w-full"
               src="../images/alan-king-KZv7w34tluA-unsplash.jpg"
+              alt="Chien taille moyenne allongé sur du carrelage, la gueule ouverte et qui porte des lunettes de soleil blanches"
             ></img>
             <img
               className="rounded-2xl row-span-2 object-cover h-full w-full"
               src="../images/jae-park-7GX5aICb5i4-unsplash.jpg"
+              alt="Chat tigré assis au sol, de face, geule ouverte, portant un bandana jaune"
             ></img>
             <img
               className="rounded-2xl row-span-1 object-cover h-full w-full"
               src="../images/yosei-g-OVgE3m4MHKM-unsplash.jpg"
+              alt="Cochon d'inde marron et blanc, de profil, sur une table, fond flou"
             ></img>
             <img
               className="rounded-2xl row-span-1 object-cover h-full w-full"
               src="../images/melanie-kreutz-IFnknR2Mv5o-unsplash.jpg"
+              alt="Lapin marron de face sur une couverture bleue"
             ></img>
             <img
               className="rounded-2xl row-span-2 object-cover h-full w-full"
               src="../images/peri-stojnic-5Vr_RVPfbMI-unsplash.jpg"
+              alt="Grand chien blanc, de face,assis, gueule ouverte, confétis au sol, fond rose"
             ></img>
           </div>
           <div className="flex justify-center pb-20 pt-5">
@@ -90,7 +99,7 @@ export default function App() {
               Comment ça marche{" "}
             </h2>
 
-            <p className="text-[#464646] ad-description font-family-body text-center mx-auto max-w-3xl px-4 text-sm leading-relaxed">
+            <p className="text-cta-bg ad-description font-family-body text-center mx-auto max-w-3xl px-4 text-sm leading-relaxed">
               Adopter un animal est un engagement sérieux et à long terme. Voici
               notre processus d'adoption en quelques étapes simples.
             </p>
@@ -147,13 +156,13 @@ export default function App() {
             </NavLink>
             <NavLink
               to="/"
-              className="btn-secondary  bg-btn-secondary-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-btn-hover-secondary-bg"
+              className="btn-secondary  bg-btn-secondary-bg text-black cursor-pointer px-4! py-2! rounded-full! hover:bg-btn-hover-secondary-bg"
             >
               Faire un don 🫶
             </NavLink>
             <NavLink
               to="/"
-              className="btn-tertiary  bg-btn-tertiary-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-btn-tertiary-hover-bg"
+              className="btn-tertiary  bg-btn-tertiary-bg text-black cursor-pointer px-4! py-2! rounded-full! hover:bg-btn-tertiary-hover-bg"
             >
               Devenir bénévole
             </NavLink>
