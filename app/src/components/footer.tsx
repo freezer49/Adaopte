@@ -20,28 +20,28 @@ export default function Footer() {
               target="blank"
               title="lien vers Facebook"
             >
-              <FiFacebook />
+              <FiFacebook className="w-7 hover:bg-white hover:text-black rounded-2xl" />
             </a>
             <a
               href="https://www.instagram.com"
               target="blank"
               title="lien vers instagram"
             >
-              <FiInstagram />
+              <FiInstagram className="w-7 hover:bg-white hover:text-black rounded-2xl" />
             </a>
             <a
               href="https://www.linkedin.com/"
               target="blank"
               title="lien vers linkedIn"
             >
-              <FiLinkedin />
+              <FiLinkedin className="w-7 hover:bg-white hover:text-black rounded-2xl" />
             </a>
             <a
               href="https://www.twitch.tv/"
               target="blank"
               title="lien vers Twitch"
             >
-              <FiTwitch />
+              <FiTwitch className="w-7 hover:bg-white hover:text-black rounded-2xl" />
             </a>
           </div>
         </div>
