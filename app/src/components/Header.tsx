@@ -11,7 +11,7 @@ const link = [
 
 export default function Header() {
   return (
-    <header className="bg-[#FFFAF8]! shadow-md">
+    <header className="bg-primary-color shadow-md">
       <ul className="w-full px-10 py-4 flex justify-between items-center">
         <li>
           <a
@@ -44,7 +44,7 @@ export default function Header() {
         </nav>
         <NavLink
           to="/"
-          className="bg-[#E74B3B]! text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#d43d2d]!"
+          className="bg-btn-secondary-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-btn-hover-secondary-bg"
         >
           Faire un don 🫶🏻
         </NavLink>

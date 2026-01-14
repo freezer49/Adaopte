@@ -74,7 +74,7 @@ export default function App() {
           <div className="flex justify-center pb-20 pt-5">
             <NavLink
               to="/Adoption"
-              className="btn-secondary bg-btn-primary-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#D43C2C]!"
+              className="btn-secondary bg-btn-primary-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-btn-hover-secondary-bg"
             >
               Voir tous les animaux
             </NavLink>
@@ -132,7 +132,7 @@ export default function App() {
             Prêt·e à changer une vie ?{" "}
           </h2>
 
-          <p className="text-[#464646] cta-description font-family-body text-center mx-auto max-w-3xl px-4 text-sm leading-relaxed">
+          <p className="text-cta-bg cta-description font-family-body text-center mx-auto max-w-3xl px-4 text-sm leading-relaxed">
             Adoptez, partagez, soutenez... Chaque geste compte. Que vous ouvriez
             votre foyer ou votre coeur, vous pouvez offrir une seconde chance à
             un animal abandonné.
@@ -141,19 +141,19 @@ export default function App() {
           <div className="cta-buttons flex justify-center gap-4 mt-8 mb-5 px-4">
             <NavLink
               to=""
-              className="btn-primary bg-[#333333]! text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#1a1a1a]!"
+              className="btn-primary bg-cta-button-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-cta-button-hover-bg!"
             >
               Adoptez un animal
             </NavLink>
             <NavLink
               to="/"
-              className="btn-secondary  bg-btn-secondary-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#D43C2C]!"
+              className="btn-secondary  bg-btn-secondary-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-btn-hover-secondary-bg"
             >
               Faire un don 🫶
             </NavLink>
             <NavLink
               to="/"
-              className="btn-tertiary  bg-[#04A552]! text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-[#0a994f]!"
+              className="btn-tertiary  bg-btn-tertiary-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-btn-tertiary-hover-bg"
             >
               Devenir bénévole
             </NavLink>

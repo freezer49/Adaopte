@@ -24,7 +24,7 @@ export default function Adoption() {
 
       {filteredAnimals.length === 0 && <p>Aucun résultat</p>}
 
-      <div className="flex flex-wrap flex-row justify-center gap-4">
+      <div className="flex flex-wrap flex-row justify-center gap-4 mb-20 ">
         {filteredAnimals.map((animal) => (
           <div
             className="basis-sm shadow-[0_0_20px_rgba(0,0,0,0.1)] rounded-lg"
@@ -37,14 +37,14 @@ export default function Adoption() {
             />
             <div className="p-10">
               <p className="mb-3 text-lg">{animal.type}</p>
-              <h3 className="font-bold text-[#8482FF] text-xl mb-3">
+              <h3 className="font-bold text-filter-text text-xl mb-3">
                 {animal.name}
               </h3>
               <p className="mb-1">{animal.age}</p>
               <p className="mb-6">{animal.city} 📍​</p>
               <p className="mb-6">{animal.description}</p>
               <NavLink
-                className="mb-3 bg-[#333333] text-white font-semibold px-6 py-4 rounded-full shadow active:bg-[#4d4c4b] transition hover:bg-btn-primary-hover-bg"
+                className="mb-3 bg-cta-button-bg text-white font-semibold px-6 py-4 rounded-full shadow active:bg-filter-button-bg transition hover:bg-btn-primary-hover-bg"
                 to="/"
               >
                 Rencontrer
