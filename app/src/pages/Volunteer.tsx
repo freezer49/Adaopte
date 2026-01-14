@@ -264,7 +264,7 @@ export default function Volunteer() {
           <h2 className="font-family-heading justify-center text-center pb-5 text-4xl font-bold">
             Témoignages de bénévoles
           </h2>
-          <p className="text-[#464646] ad-description font-family-body text-center mx-auto max-w-3xl px-4 text-sm leading-relaxed">
+          <p className="text-cta-bg ad-description font-family-body text-center mx-auto max-w-3xl px-4 text-sm leading-relaxed">
             Découvrez ce que nos bénévoles partagent de leur expérience chez
             Adaopte.
           </p>
@@ -282,6 +282,7 @@ export default function Volunteer() {
               </li>
             ))}
           </ul>
+        </div>
       </section>
       <section className="cta-section bg-light-color pb-5">
         <h2 className="cta-title font-family-heading justify-center text-center pb-5 pt-5 text-4xl font-bold">
