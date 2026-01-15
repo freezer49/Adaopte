@@ -6,13 +6,15 @@ export function Filter() {
   const [animalType, setAnimalType] = useState("");
   const [city, setCity] = useState("");
 
+  // useNavigate qui nous permet de definir comment ecrire dans l'url les informations pour filtrer
   const navigate = useNavigate();
 
+  // on fait en sorte que les variables animalType et city soit des valeur qu'on peut definir dans l'url
   const handleSearch = () => {
     navigate(
       `/Adoption?type=${encodeURIComponent(
         animalType
-      )}&ville=${encodeURIComponent(city)}`
+      )}&city=${encodeURIComponent(city)}`
     );
   };
 

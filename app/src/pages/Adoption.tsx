@@ -2,12 +2,16 @@ import { NavLink, useSearchParams } from "react-router";
 import { animals } from "../data/animals";
 import { Filter } from "../components/Filter";
 
+// fonction pour appliquer les filtres sur cette page
 export default function Adoption() {
+  // recuperation des parametres useSearch definis dans filter.tsx
   const [searchParams] = useSearchParams();
 
+  // on import type et city
   const type = searchParams.get("type");
-  const ville = searchParams.get("ville");
+  const ville = searchParams.get("city");
 
+  // on filtres les animaux en fonction des données rentré dans filter
   const filteredAnimals = animals.filter((animal) => {
     const matchType = !type || animal.type === type;
     const matchCity =
