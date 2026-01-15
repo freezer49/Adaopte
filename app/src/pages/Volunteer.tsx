@@ -276,6 +276,7 @@ export default function Volunteer() {
               <li key={key.testimony}>
                 <TestimonyCard
                   picture={key.picture as unknown as HTMLImageElement}
+                  alt={key.alt}
                   name={key.name}
                   label={key.label}
                   testimony={key.testimony}

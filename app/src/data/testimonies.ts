@@ -1,6 +1,7 @@
 export const testimonies = [
   {
     picture: "/images/omid-armin-yisZonvqh54-unsplash.jpg",
+    alt: "Portrait de Claire M.",
     name: "Claire M.",
     label: "Bénévole depuis 1 an",
     testimony:
@@ -8,6 +9,7 @@ export const testimonies = [
   },
   {
     picture: "/images/christian-buehner-DItYlc26zVI-unsplash.jpg",
+    alt: "Portrait de Juan R.",
     name: "Juan R.",
     label: "Bénévole depuis 8 mois.",
     testimony:

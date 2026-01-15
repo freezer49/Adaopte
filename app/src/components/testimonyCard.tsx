@@ -1,5 +1,6 @@
 interface TestimonyCardProps {
   picture: HTMLImageElement;
+  alt: string;
   name: string;
   label: string;
   testimony: string;
@@ -7,6 +8,7 @@ interface TestimonyCardProps {
 
 export const TestimonyCard = ({
   picture,
+  alt,
   name,
   label,
   testimony,
@@ -17,7 +19,7 @@ export const TestimonyCard = ({
         <div className="flex items-center mb-2">
           <img
             src={picture.toString()}
-            alt={name}
+            alt={alt}
             className="w-16 h-16 rounded-full p-2 object-cover"
           />
           <div>
