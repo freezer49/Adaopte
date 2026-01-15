@@ -6,9 +6,9 @@ export default function App() {
   return (
     <>
       <main>
-        <section className="relative overflow-hidden text-center text-primary-color py-40 ">
-          <div className="relative z-50">
-            <h1 className="text-6xl pb-12 font-family-heading">
+        <section className="relative overflow-hidden text-center text-primary-color py-40">
+          <div className="relative z-50 ">
+            <h1 className="text-6xl pb-12 font-family-heading ">
               Donnons-leurs autant qu'ils nous apportent
             </h1>
             <p>

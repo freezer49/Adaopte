@@ -3,7 +3,7 @@ import { FiFacebook, FiInstagram, FiLinkedin, FiTwitch } from "react-icons/fi";
 export default function Footer() {
   return (
     <footer className="bg-heading-color text-primary-color p-5 text-sm">
-      <div className="flex gap-5 justify-around pb-4">
+      <div className="flex gap-5 justify-around pb-4 md:max-w-1xl lg:max-w-2xl xl:max-w-4xl mx-auto flex-2 md:flex-row ">
         <div>
           <div className="pb-5">
             <h3 className="text-secondary-color text-xl pb-5 font-family-heading">

@@ -17,7 +17,7 @@ export function Filter() {
   };
 
   return (
-    <div className="flex size-29 justify-center items-center rounded-[8px] w-[900px] bg-[#fff] shadow-lg mx-auto">
+    <div className="flex size-29 justify-center items-center rounded-lg w-225 bg-white shadow-lg mx-auto">
       <div className="flex flex-col items-start translate-y-3 w-1/3 ml-3 justify-start h-full p-2">
         <label>
           Type d'animal
@@ -52,7 +52,7 @@ export function Filter() {
       <button
         type="button"
         onClick={handleSearch}
-        className="bg-dark-color text-[#FFF] translate-y-[10px] rounded-full mr-3 p-[8px] w-1/3 cursor-pointer transition-colors hover:bg-btn-primary-hover-bg"
+        className="bg-dark-color text-[#FFF] translate-y-2.5 rounded-full mr-3 p-2 w-1/3 cursor-pointer transition-colors hover:bg-btn-primary-hover-bg"
       >
         Rechercher 🔍
       </button>

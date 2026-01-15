@@ -6,6 +6,7 @@ import Volunteer from "./pages/Volunteer.tsx";
 import { Route, Routes, BrowserRouter } from "react-router";
 import Footer from "./components/footer.tsx";
 import Header from "./components/Header.tsx";
+import BottomNavBar from "./components/BottomNavBar.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")!).render(
       <Route path="/Adoption" element={<Adoption />} />
       <Route path="/Volunteer" element={<Volunteer />} />
     </Routes>
+    <BottomNavBar />
     <Footer />
   </BrowserRouter>
 );
