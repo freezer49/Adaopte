@@ -52,8 +52,10 @@ export default function Footer() {
           <div className="text-zinc-400">
             <p className="pb-2">FAQs</p>
             <p className="pb-2">Conseils d'adoption</p>
-            <p className="pb-2">Nous Contacter</p>
-            <p>Mentions légales</p>
+            <a href="mailto:contact@adaopte.fr" className="hover:underline">
+              Nous Contacter
+            </a>
+            <p className="pt-2">Mentions légales</p>
           </div>
         </div>
         <div>
