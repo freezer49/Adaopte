@@ -1,6 +1,7 @@
 import { NavLink } from "react-router";
 import { Filter } from "./components/Filter";
 import { InfoCard } from "./components/infoCard";
+import { link } from "./components/pageLinks";
 
 export default function App() {
   return (
@@ -149,7 +150,7 @@ export default function App() {
 
           <div className="cta-buttons flex justify-center gap-4 mt-8 mb-5 px-4">
             <NavLink
-              to=""
+              to={link[1].link}
               className="btn-primary bg-cta-button-bg text-white! cursor-pointer px-4! py-2! rounded-full! hover:bg-cta-button-hover-bg!"
             >
               Adoptez un animal
@@ -161,7 +162,7 @@ export default function App() {
               Faire un don 🫶
             </NavLink>
             <NavLink
-              to="/"
+              to={link[3].link}
               className="btn-tertiary  bg-btn-tertiary-bg text-black cursor-pointer px-4! py-2! rounded-full! hover:bg-btn-tertiary-hover-bg"
             >
               Devenir bénévole
