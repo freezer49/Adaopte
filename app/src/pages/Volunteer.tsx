@@ -275,7 +275,7 @@ export default function Volunteer() {
             {testimonies.map((key) => (
               <li key={key.testimony}>
                 <TestimonyCard
-                  picture={key.picture as unknown as HTMLImageElement}
+                  picture={key.picture}
                   alt={key.alt}
                   name={key.name}
                   label={key.label}
