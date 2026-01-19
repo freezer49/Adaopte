@@ -55,6 +55,7 @@ export default function Volunteer() {
                     Prénom
                     <span className="text-red-600"> *</span>
                   </label>
+
                   <input
                     {...register("firstName", {
                       required: "Le prénom est obligatoire",
@@ -173,7 +174,8 @@ export default function Volunteer() {
                     {...register("availability", {
                       required: "Les disponibilités sont obligatoires",
                     })}
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow appearance-none border rounded w-full py-2 px-3
+                     text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     id="availability"
                   >
                     <option value="">Sélectionnez vos disponibilités</option>
