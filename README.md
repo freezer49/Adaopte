@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="./public/logo.svg" alt="Adaopte Logo" width="180"/>
-</p>
 
 <h1 align="center">🐾 Adaopte</h1>
 
@@ -50,20 +47,18 @@ Adaopte est une plateforme solidaire qui permet de :
 | -------------------- | ------------------------------- | :----: |
 | **Accueil**          | Présentation + recherche rapide |   ✅   |
 | **J'adopte**         | Liste des animaux avec filtres  |   ✅   |
-| **Devenir bénévole** | Formulaire d'inscription + FAQ  |   ✅   |
+| **Devenir bénévole** | Formulaire d'inscription        |   ✅   |
 
 ### Détails techniques
 
 - ✅ **Filtrage dynamique** par type d'animal et localisation
 - ✅ **Gestion des URL params** pour partager une recherche
-- ✅ **LocalStorage** pour la persistance des filtres
 - ✅ **Validation de formulaires** avec gestion d'erreurs
 - ✅ **Composants réutilisables** (Card, Button, Filter, List)
 - ✅ **Données typées** avec TypeScript
 - ✅ **HTML sémantique** et accessibilité
 - ✅ **Lien mailto:** pour le contact
 - ✅ **Témoignages** de bénévoles
-- ✅ **Design responsive** mobile-first
 
 ---
 
@@ -80,42 +75,6 @@ Adaopte est une plateforme solidaire qui permet de :
 | **Icônes**      | React Icons     |
 | **Déploiement** | Vercel          |
 | **Versioning**  | Git / GitHub    |
-
----
-
-## 🚀 Installation
-
-### Prérequis
-
-- [Node.js](https://nodejs.org/) v18+
-- npm ou yarn
-
-### Démarrage rapide
-
-```bash
-# 1. Cloner le repo
-git clone https://github.com/votre-username/adaopte.git
-
-# 2. Aller dans le dossier
-cd adaopte
-
-# 3. Installer les dépendances
-npm install
-
-# 4. Lancer le serveur de dev
-npm run dev
-```
-
-🌐 Ouvrir [http://localhost:5173](http://localhost:5173)
-
-### Scripts disponibles
-
-```bash
-npm run dev       # Serveur de développement
-npm run build     # Build de production
-npm run preview   # Prévisualiser le build
-npm run lint      # Vérifier le code
-```
 
 ---
 
@@ -141,14 +100,11 @@ adaopte/
 │   │   │   └── testimonies.ts    # Témoignages bénévoles
 │   │   │
 │   │   ├── 📂 pages/             # Pages de l'application
-│   │   │   ├── Adoption.tsx      # Liste des animaux + filtres
-│   │   │   └── Volunteer.tsx     # Formulaire bénévole
-│   │   │
-│   │   ├── 📂 assets/            # Assets statiques
-│   │   ├── App.tsx               # Page d'accueil
-│   │   ├── main.tsx              # Point d'entrée + routing
-│   │   └── index.css             # Styles Tailwind + variables
-│   │
+│   │       ├── Adoption.tsx      # Liste des animaux + filtres
+│   │       └── Volunteer.tsx     # Formulaire bénévole
+│   │── App.tsx                   # Page d'accueil
+│   │── main.tsx                  # Point d'entrée + routing
+│   │── index.css                 # Styles Tailwind + variables
 │   ├── index.html
 │   ├── vite.config.ts
 │   ├── tsconfig.json
@@ -156,40 +112,6 @@ adaopte/
 │
 └── README.md
 ```
-
----
-
-## 🗄️ Modèle de données
-
-Les données sont actuellement stockées en TypeScript dans `app/src/data/`.
-
-### Structure d'un animal
-
-```typescript
-interface Animal {
-  name: string; // Nom de l'animal
-  age: string; // Âge (ex: "2 ans")
-  breed: string; // Race
-  type: "Chien" | "Chat" | "Lapin" | "Rongeur";
-  city: string; // Ville
-  zipcode: string; // Code postal
-  description: string; // Description
-  imageUrl: string; // URL de l'image
-}
-```
-
-### Animaux disponibles
-
-| Nom     | Type    | Race          | Ville      |
-| ------- | ------- | ------------- | ---------- |
-| Charlie | Chien   | Carlin        | Lille      |
-| Mia     | Chat    | Noir et blanc | Strasbourg |
-| Coco    | Lapin   | -             | Annecy     |
-| Rex     | Chien   | Chow-Chow     | Grenoble   |
-| Luna    | Chat    | Roux          | Bordeaux   |
-| Biscuit | Rongeur | Cochon d'Inde | Tours      |
-| Rio     | Lapin   | Nain brun     | Poitiers   |
-| Ruby    | Chien   | Samoyède      | Chamonix   |
 
 ---
 
@@ -216,43 +138,38 @@ type(scope): description
 | `feat`     | Nouvelle fonctionnalité |
 | `fix`      | Correction de bug       |
 | `style`    | Mise en forme, CSS      |
-| `docs`     | Documentation           |
-| `refactor` | Refactorisation         |
 | `chore`    | Maintenance             |
 
-**Exemples :**
-
-```bash
-feat(filter): add location dropdown
-fix(card): resolve image aspect ratio
-style(home): improve hero section spacing
-```
 
 ---
 
 ## 👥 Équipe
 
-Projet réalisé par des étudiants de l'[Ada Tech School](https://adatechschool.fr/) - Promotion Nantes 2025
+Projet réalisé par des étudiants de [Ada Tech School](https://adatechschool.fr/) - Promotion Nantes 2025 - Mélissa Largilliere, Lucas Queveau et Chloé Verglas.
 
 <!-- Ajoutez vos profils GitHub ci-dessous -->
 <!--
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/votre-username">
-        <img src="https://github.com/votre-username.png" width="80px;" alt=""/>
-        <br /><sub><b>Prénom Nom</b></sub>
+      <a href="https://github.com/piouoiq">
+        <br /><sub><b>Melissa Largilliere</b></sub>
+      </a>
+    </td>
+        <td align="center">
+      <a href="https://github.com/pepito11878">
+        <br /><sub><b>Lucas Queveau</b></sub>
+
+            <td align="center">
+      <a href="https://github.com/freezer49">
+        <br /><sub><b>Chloé Verglas</b></sub>
+      </a>
+    </td>
       </a>
     </td>
   </tr>
 </table>
 -->
-
----
-
-## 📄 Licence
-
-Projet pédagogique - **Ada Tech School** Nantes 2025
 
 ---
 
